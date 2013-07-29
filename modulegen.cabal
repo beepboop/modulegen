@@ -1,0 +1,25 @@
+name: modulegen
+version: 0.0.1
+cabal-version: >=1.2
+build-type: Simple
+license: AllRightsReserved
+license-file: ""
+maintainer: Andrey Shiray <shiray.and@gmail.com>
+stability: Experimental
+description: Generating tasks for MI Module#2
+category: Education
+author: Andrey Shiray
+data-dir: ""
+ 
+executable modulegen
+    build-depends: QuickCheck -any, base -any, random >=1.0.1.1 && <1.1
+    main-is: Main.hs
+    buildable: True
+    hs-source-dirs: src
+ 
+test-suite test-modulegen
+    build-depends: QuickCheck -any, base -any, random >=1.0.1.1 && <1.1
+    type: exitcode-stdio-1.0
+    main-is: Main.hs
+    buildable: True
+    hs-source-dirs: src
